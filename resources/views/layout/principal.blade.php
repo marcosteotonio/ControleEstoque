@@ -18,9 +18,10 @@
         
         <meta name="viewport" content="width=device-width">
 
-    	<title>Controle de Estoque Purchase Store</title>
+    	<title>Controle de Estoque</title>
     </head>
     <body>
+       @if(Auth::user())
         <nav class="navbar navbar-default">
             <div class="container-fluid">
               <div class="navbar-header">
@@ -30,7 +31,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ route('Pagina inicial') }}">Purchase Store</a>
+                <a class="navbar-brand" href="{{ route('Pagina inicial') }}">Controle de estoque</a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -106,12 +107,12 @@
               </div><!--/.nav-collapse -->
             </div><!--/.container-fluid -->
       </nav>
-  
+      @endif
         @yield('conteudo')
 
-<footer class="bs-footer" role="contentinfo">
+<footer class="bs-footer text-center" role="contentinfo">
   <div class="container">
-    <p>Purchase Store 2016-2019</p>
+    <p>Controle de estoque 2016-2019</p>
   </div>
 
 </footer>
