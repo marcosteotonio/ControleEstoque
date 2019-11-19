@@ -13,10 +13,10 @@ class NovoCampoProdutos extends Migration
      */
     public function up()
     {
-        Schema::table('produtos', function($table){
-            $table->string('codigo_produto');
-            $table->string('path_image');
-        });    
+        Schema::table('produtos', function ($table) {
+            $table->string('codigo_produto')->nullable();
+            $table->string('path_image')->nullable();
+        });
     }
 
     /**

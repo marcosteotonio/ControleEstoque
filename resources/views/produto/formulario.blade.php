@@ -60,7 +60,7 @@
     <div class="form-group">
         <label class="col-md-4 control-label" for="categoria">Categoria</label>
         <div class="col-md-4">
-            <select id="categoria" name="fk_categoria" value="{{ old('fk_categoria') }}" class="form-control js-example-basic-multiple-limit">
+            <select id="categoria" name="fk_categoria" value="{{ old('fk_categoria') }}" class="form-control js-example-basic-multiple-limit" required>
                 @foreach($categorias as $c)
                     <option value="{{ $c->id_categoria }}">{{ $c->nome }}</option>
                 @endforeach
